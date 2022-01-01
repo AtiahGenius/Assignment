@@ -16,6 +16,10 @@ class MyApp extends StatelessWidget {
       builder: () => MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.white,
+            
+          ),
           // This is the theme of your application.
           //
           // Try running your application with "flutter run". You'll see the
@@ -27,7 +31,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: const ContactHome(),
+        home:  ContactHome(),
       ),
       designSize: const Size(375, 812),
     );
