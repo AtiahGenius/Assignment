@@ -15,7 +15,7 @@ class ContactHome extends StatelessWidget {
           child: ListView(
             children: [
               SizedBox(
-                height: 35.h,
+                height: 34.h,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
