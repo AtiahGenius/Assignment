@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ContactHome extends StatelessWidget {
-  ContactHome({Key? key}) : super(key: key);
+  const ContactHome({Key? key}) : super(key: key);
   final darkTextColor = Colors.black;
   final lightTextColor = Colors.grey;
 
