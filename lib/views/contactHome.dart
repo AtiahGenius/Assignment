@@ -131,6 +131,171 @@ class ContactHome extends StatelessWidget {
                   );
                 },
               ),
+              Divider(
+                color: lightTextColor,
+              ),
+
+              SizedBox(
+                height: 12.h,
+              ),
+              Text(
+                'Contacts',
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 14.sp),
+              ),
+              SizedBox(
+                height: 9.h,
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: Text(
+                  'A',
+                  style:
+                      TextStyle(fontWeight: FontWeight.w700, fontSize: 14.sp),
+                ),
+              ),
+              SizedBox(
+                height: 5.h,
+              ),
+              ListView.separated(
+                itemCount: 2,
+                shrinkWrap: true,
+                physics: const ClampingScrollPhysics(),
+                separatorBuilder: (context, index) {
+                  return Divider(
+                    color: lightTextColor,
+                  );
+                },
+                itemBuilder: (context, index) {
+                  return SizedBox(
+                    height: 60.h,
+                    child: Row(
+                      children: [
+                        const CircleAvatar(
+                          backgroundImage:
+                              AssetImage('assets/profiles/brickleberry.png'),
+                        ),
+                        SizedBox(
+                          width: 12.w,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Anna Marie',
+                              style: TextStyle(
+                                color: darkTextColor,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 14.sp,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 3.h,
+                            ),
+                            Text(
+                              '+233 24 54 36 757',
+                              style: TextStyle(
+                                color: lightTextColor,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 12.sp,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          width: 149.w,
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          color: lightTextColor,
+                          iconSize: 30.sp,
+                          icon: const Icon(Icons.more_horiz),
+                        )
+                      ],
+                    ),
+                  );
+                },
+              ),
+              Divider(
+                color: lightTextColor,
+              ),
+              SizedBox(
+                height: 5.h,
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: Text(
+                  'B',
+                  style:
+                      TextStyle(fontWeight: FontWeight.w700, fontSize: 14.sp),
+                ),
+              ),
+              SizedBox(
+                height: 5.h,
+              ),
+              ListView.separated(
+                itemCount: 2,
+                physics: const ClampingScrollPhysics(),
+                shrinkWrap: true,
+                separatorBuilder: (context, index) {
+                  return Divider(
+                    color: lightTextColor,
+                  );
+                },
+                itemBuilder: (context, index) {
+                  return SizedBox(
+                    height: 60.h,
+                    child: Row(
+                      children: [
+                        const CircleAvatar(
+                          backgroundImage:
+                              AssetImage('assets/profiles/brickleberry.png'),
+                        ),
+                        SizedBox(
+                          width: 12.w,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Benard Mousky',
+                              style: TextStyle(
+                                color: darkTextColor,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 14.sp,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 3.h,
+                            ),
+                            Text(
+                              '+233 24 54 36 757',
+                              style: TextStyle(
+                                color: lightTextColor,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 12.sp,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          width: 149.w,
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          color: lightTextColor,
+                          iconSize: 30.sp,
+                          icon: const Icon(Icons.more_horiz),
+                        )
+                      ],
+                    ),
+                  );
+                },
+              ),
+              Divider(
+                color: lightTextColor,
+              ),
             ],
           ),
         ),
